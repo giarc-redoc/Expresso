@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Expresso- Cafe Culture in Your City</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/expresso.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand color-me a:hover" href="index.html">Expresso</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link color-me" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link color-me" href="#services">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle color-me" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Cafes
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="#secondstate">Second State</a>
+              <a class="dropdown-item" href="#kudu">Kudu</a>
+              <a class="dropdown-item" href="#harbinger">Harbinger</a>
+              <a class="dropdown-item" href="#rise">The Rise</a>
+              <a class="dropdown-item" href="#bakehouse">Bakehouse</a>
+              <a class="dropdown-item" href="#tricera">Tricera</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link color-me" href="contact.html">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Rating Modal-->
+  <div id="ratingModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header row-red">
+              <div class="col-sm-6">
+                <h3 class="modal-title"><em>Expresso</em> Rating</h3>
+              </div>
+              <div class="col">
+                <a href="#"><img class="card-img-top" src="img/coffee1.gif" alt=""></a>
+              </div>
+              <div class="col">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group row">
+                              <label for="whichCafe" class="col-sm-6 col-form-label">Which Cafe?</label>
+                              <div class="col">
+                                  <select name="whichCafe" id="whichCafe" class="form-control ml-auto">
+                                      <option value="selects">Select...</option>
+                                      <option value="1">Second State</option>
+                                      <option value="2">Kudu</option>
+                                      <option value="3">Harbinger</option>
+                                      <option value="4">Rise</option>
+                                      <option value="5">Bakehouse</option>
+                                      <option value="6">Tricera</option>
+                                  </select> 
+                              </div>
+                          </div> 
+                          <div class="form-group row">
+                            <label for="campsiteType" class="col-sm-6 col-form-label">Overall </label>
+                            <div class="col-2 btn-group btn-group-toggle ml-auto" data-toggle="buttons">
+                                <label class="btn button btn-primary active">
+                                    <input type="radio" name="siteType" id="siteTent" autocomplete="off"> 1
+                                  </label>
+                                  <label class="btn button btn-primary">
+                                    <input type="radio" name="siteType" id="siteRV" autocomplete="off"> 2
+                                  </label>
+                                  <label class="btn button btn-primary">
+                                    <input type="radio" name="siteType" id="siteRV" autocomplete="off"> 3
+                                  </label>
+                                  <label class="btn button btn-primary">
+                                    <input type="radio" name="siteType" id="siteRV" autocomplete="off"> 4
+                                  </label>
+                                  <label class="btn button btn-primary">
+                                    <input type="radio" name="siteType" id="siteRV" autocomplete="off"> 5
+                                  </label>
+                            </div>    
+                        </div> 
+                        <div class="form-group row">
+                          <label for="campsiteType" class="col-sm-6 col-form-label">Service  </label>
+                          <div class="col-2 btn-group btn-group-toggle ml-auto" data-toggle="buttons">
+                              <label class="btn button btn-primary active">
+                                  <input type="radio" name="siteType" id="siteTent" autocomplete="off"> 1
+                                </label>
+                                <label class="btn button btn-primary">
+                                  <input type="radio" name="siteType" id="siteRV" autocomplete="off"> 2
+                                </label>
+                                <label class="btn button btn-primary">
+                                  <input type="radio" name="siteType" id="siteRV" autocomplete="off"> 3
+                                </label>
+                                <label class="btn button btn-primary">
+                                  <input type="radio" name="siteType" id="siteRV" autocomplete="off"> 4
+                                </label>
+                                <label class="btn button btn-primary">
+                                  <input type="radio" name="siteType" id="siteRV" autocomplete="off"> 5
+                                </label>
+                          </div>    
+                      </div> 
+                      <div class="form-group row">
+                        <label for="campsiteType" class="col-sm-6 col-form-label">Espresso</label>
+                        <div class="col-2 btn-group btn-group-toggle ml-auto" data-toggle="buttons">
+                            <label class="btn button btn-primary active">
+                                <input type="radio" name="siteType" id="siteTent" autocomplete="off"> 1
+                              </label>
+                              <label class="btn button btn-primary">
+                                <input type="radio" name="siteType" id="siteRV" autocomplete="off"> 2
+                              </label>
+                              <label class="btn button btn-primary">
+                                <input type="radio" name="siteType" id="siteRV" autocomplete="off"> 3
+                              </label>
+                              <label class="btn button btn-primary">
+                                <input type="radio" name="siteType" id="siteRV" autocomplete="off"> 4
+                              </label>
+                              <label class="btn button btn-primary">
+                                <input type="radio" name="siteType" id="siteRV" autocomplete="off"> 5
+                              </label>
+                        </div>    
+                    </div> 
+                        </div>
+                        <div class="row">
+                          <div class="form-check">
+                              <input class="form-check-input" type="checkbox">
+                              <label class="form-check-label"> Remember me</label>
+                          </div>
+                      </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn button btn-primary btn-sm ml-1">Express-o</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row-spacer"></div>
+
+    <a name="services"></a>
+    <div class="row justify-content-center mb-2">
+      <div><h2><b>charleston</b></h2></div>
+    </div>
+    <div class="row justify-content-center">
+      <div><h1><b>COFFEEHOUSES</b></h1></div>
+    </div>
+
+    <div class="row-spacer"></div>
+
+    <hr>
+
+    <!-- Cafe One -->
+    <a name="secondstate"></a> 
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="img/cafe9-2.jpg" alt="">
+      </div>
+      <div class="col-lg-6">
+        <h2>Second State Coffee</h2>
+        <p>Minimalist-chic coffee bar with hot & cold drinks, window-bar seating, communal tables & WiFi.</p>
+        <p>Phone: 111-222-3333 <br> Email: email@example.com <br>400 King St <br>Charleston, SC 33444</p>
+        <div class="">
+          <a class="btn button btn-primary" role="button" data-toggle="modal" data-target="#ratingModal">
+            <i class="fa fa-sign-in"></i> Express-o
+          </a>        
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Cafe Two -->
+    <a name="kudu"></a> 
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="img/cafe8-2.jpg" alt="">
+      </div>
+      <div class="col-lg-6">
+        <h2>Kudu</h2>
+        <p>Hip coffeehouse with a courtyard patio also serves craft beers & hosts live music on the weekends.</p>
+        <p>Phone: 111-222-3333 <br> Email: email@example.com <br>400 King St <br>Charleston, SC 33444</p>
+        <div class="">
+          <a class="btn button btn-primary" role="button" data-toggle="modal" data-target="#ratingModal">
+            <i class="fa fa-sign-in"></i> Express-o
+          </a> 
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Cafe Three -->
+    <a name="harbinger"></a> 
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="img/cafe5-2.jpg" alt="">
+      </div>
+      <div class="col-lg-6">
+        <h2>Harbinger Cafe</h2>
+        <p>Handcrafted, health-conscious breakfast & lunch fare (plus a coffee bar) in a homey environment.</p>
+        <p>Phone: 111-222-3333 <br> Email: email@example.com <br>400 King St <br>Charleston, SC 33444</p>
+        <div class="">
+          <a class="btn button btn-primary" role="button" data-toggle="modal" data-target="#ratingModal">
+            <i class="fa fa-sign-in"></i> Express-o
+          </a> 
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Cafe Four -->
+    <a name="rise"></a> 
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="img/cafe3-2.jpg" alt="">
+      </div>
+      <div class="col-lg-6">
+        <h2>The Rise</h2>
+        <p>Modern, counter-serve cafe offering espresso drinks, tea, cold-pressed juices & baked goods.</p>
+        <p>Phone: 111-222-3333 <br> Email: email@example.com <br>400 King St <br>Charleston, SC 33444</p>
+        <div class="">
+          <a class="btn button btn-primary" role="button" data-toggle="modal" data-target="#ratingModal">
+            <i class="fa fa-sign-in"></i> Express-o
+          </a> 
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Cafe Five -->
+    <a name="bakehouse"></a> 
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="img/cafe12-2.jpg" alt="">
+      </div>
+      <div class="col-lg-6">
+        <h2>Bakehouse</h2>
+        <p>Relaxed spot for custom-bean coffee drinks & craft beers paired with sweet & savory baked goods.</p>
+        <p>Phone: 111-222-3333 <br> Email: email@example.com <br>400 King St <br>Charleston, SC 33444</p>
+        <div class="">
+          <a class="btn button btn-primary" role="button" data-toggle="modal" data-target="#ratingModal">
+            <i class="fa fa-sign-in"></i> Express-o
+          </a> 
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Cafe Six -->
+    <a name="tricera"></a> 
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded mb-4" src="img/cafe15-2.jpg" alt="">
+      </div>
+      <div class="col-lg-6">
+        <h2>Tricera Coffee</h2>
+        <p>Quaint coffee shop offering espresso drinks, plus breakfast & lunch eats in a laid-back atmosphere.</p>
+        <p>Phone: 111-222-3333 <br> Email: email@example.com <br>400 King St <br>Charleston, SC 33444</p>
+        <div class="">
+          <a class="btn button btn-primary" role="button" data-toggle="modal" data-target="#ratingModal">
+            <i class="fa fa-sign-in"></i> Express-o
+          </a> 
+        </div>
+      </div>
+    </div>
+    
+    <hr>
+
+    <div class="row-spacer"></div>
+
+
+    <!--Graphic Espresso Gif-->
+    <div class="row row-red">
+      <div class="col-sm-4">
+      </div>
+      <div class="col-sm-4">
+        <a href="#"><img class="card-img-top" src="img/coffee1.gif" alt=""></a>
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+
+    <div class="row-spacer"></div>
+
+
+      <!--Breadcrumbs -->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active">Home</li>
+        <li class="breadcrumb-item"><a class="a-link" href="index.html">About</a></li>
+        <li class="breadcrumb-item"><a class="a-link" href="#services">Services</a></li>
+      </ol>
+  
+    </div>
+  
+      <hr>
+  
+      <!-- Contact Section -->
+      <div class="row mb-4 align-middle">
+        <div class="col-md-8">
+          <p>Do you search of the perfect cup of coffee? Look no further, here you can find and rate the top cafes in your city.</p>
+        </div>
+        <div class="col-md-4">
+          <a class="btn button btn-lg btn-secondary btn-block" href="contact.html">Contact Us</a>
+        </div>
+      </div>
+
+    <!-- Pagination -->
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link a-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li class="page-item">
+        <a class="page-link a-link" href="#">1</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link a-link" href="#">2</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link a-link" href="#">3</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link a-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Expresso 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
